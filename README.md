@@ -26,19 +26,19 @@ AI-powered content virality analyzer.
 
 ##  Screenshots
 ### Home Screen
-screenshots/1_home.png
+screenshots/home.png
 
 ### Caption Input
-screenshots/2_input.png
+screenshots/input.png
 
 ### Image Upload
-screenshots/3_image_preview.png
+screenshots/image_preview.png
 
 ### Video Upload
-screenshots/4_video_preview.png
+screenshots/video_preview.png
 
 ### Result
-screenshots/5_result.png
+screenshots/result.png
 
 ##  Demo
 https://www.loom.com/share/17c88c52b4004b3bb62440f8fcc34823
