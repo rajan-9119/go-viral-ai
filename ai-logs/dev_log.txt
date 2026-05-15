@@ -1,0 +1,161 @@
+Project: Go Viral AI — Content Virality Analyzer
+
+--------------------------------------------------
+
+[Session 1: Project Understanding & Planning]
+
+Prompt:
+I need to build a Go Viral AI app where users upload caption, image or video and get virality score with feedback. What should be the structure?
+
+Response Summary:
+- Suggested Django for backend
+- Use AI API for analysis
+- Keep UI simple with input + result sections
+
+Outcome:
+- Decided tech stack: Django + Groq API
+- Planned features: caption analysis, score, suggestions
+
+--------------------------------------------------
+
+[Session 2: UI Development]
+
+Prompt:
+Create a simple UI with caption input and file upload with preview.
+
+Response Summary:
+- Provided HTML structure with textarea and file input
+- Suggested preview feature using JavaScript
+
+Issues Faced:
+- Image preview not showing properly
+- Remove button not aligned
+
+Fix:
+- Used FileReader API
+- Adjusted CSS using flexbox for alignment
+
+Outcome:
+- UI ready with working image preview and remove button
+
+--------------------------------------------------
+
+[Session 3: AI Integration]
+
+Prompt:
+How to connect Groq API with Django view for caption analysis?
+
+Response Summary:
+- Provided API integration code
+- Suggested structured prompt returning JSON
+
+Issues Faced:
+- API key error (not loading)
+
+Fix:
+- Used python-dotenv
+- Stored API key in .env file
+
+Outcome:
+- AI connected successfully
+
+--------------------------------------------------
+
+[Session 4: JSON Parsing Issue]
+
+Prompt:
+AI response sometimes comes inside ```json block, how to fix parsing?
+
+Response Summary:
+- Suggested cleaning response using regex
+
+Fix Applied:
+- Removed ```json and ``` using re.sub()
+
+Outcome:
+- JSON parsing stable
+
+--------------------------------------------------
+
+[Session 5: Scoring Problem]
+
+Prompt:
+AI score is inconsistent (very low or random), how to fix?
+
+Response Summary:
+- Suggested custom scoring instead of AI score
+
+Fix Applied:
+- Created scoring system:
+  - Hook → 20 or 10
+  - Emotion → 30 or 15
+  - CTA → 20 or 5
+- Combined for final score
+
+Outcome:
+- Score became consistent and realistic
+
+--------------------------------------------------
+
+[Session 6: Feature Expansion]
+
+Prompt:
+Add improved caption and competitor insight feature.
+
+Response Summary:
+- Updated prompt to include:
+  - caption_improvement
+  - competitor_tip
+
+Outcome:
+- New features added successfully
+
+--------------------------------------------------
+
+[Session 7: Image & Video Support]
+
+Prompt:
+How to detect image or video upload in Django?
+
+Response Summary:
+- Use file.content_type
+
+Issues Faced:
+- Detection not showing in UI
+
+Fix:
+- Added feedback.append("Image detected") / ("Video detected")
+
+Outcome:
+- Media detection working
+
+--------------------------------------------------
+
+[Session 8: UI Bug Fixes]
+
+Prompt:
+Button hover is shifting position and score animation not smooth.
+
+Response Summary:
+- Adjust CSS transform scale instead of translate
+- Fix JS interval speed
+
+Fix Applied:
+- Improved button hover effect
+- Fixed score counter logic
+
+Outcome:
+- Smooth UI experience
+
+--------------------------------------------------
+
+[Final Status]
+
+- Caption analysis working
+- Image & video upload working
+- AI scoring + breakdown working
+- Suggestions and hashtags generated
+- Improved caption & competitor insights added
+- UI polished and stable
+
+Project completed and ready for submission.
